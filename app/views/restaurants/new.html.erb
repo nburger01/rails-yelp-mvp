@@ -1,0 +1,16 @@
+<h1>This the new view from restaurants</h1>
+
+
+<form action="/restaurants" method="post">
+<%= form_for(@restaurant) do |g| %>
+  <%= g.label :name %>
+  <%= g.text_field :name %>
+  <%= g.label :address %>
+  <%= g.text_field :address %>
+  <%= g.label :phone_number %>
+  <%= g.text_field :phone_number %>
+  <%= g.label :category %>
+  <%= g.text_field :category %>
+  <%= g.submit %>
+  <% end %>
+</form>
